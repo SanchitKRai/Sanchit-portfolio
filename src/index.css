@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  --color-forest-950: #060c09;
+  --color-forest-900: #0b140f;
+  --color-forest-850: #0e1a14;
+  --color-forest-800: #13241b;
+  --color-forest-750: #172c21;
+  --color-forest-700: #1d3629;
+  --color-forest-600: #274b39;
+  
+  --color-amber-gold: #e2a84b;
+  --color-amber-gold-light: #f5c879;
+  --color-cyber-lime: #c5f13b;
+  
+  --color-sand-50: #faf8f5;
+  --color-sand-100: #f4efe6;
+  --color-sand-200: #eae4d7;
+  --color-sand-400: #a39c8f;
+  --color-sand-500: #7a7469;
+  
+  --color-sage-300: #a3bdae;
+  --color-sage-400: #82a08f;
+  --color-sage-500: #627f6f;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-forest-900);
+    color: var(--color-sand-100);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09100c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d3629;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #274b39;
+}
+
+/* Glassmorphism card styles */
+.glass-panel {
+  background: rgba(14, 26, 20, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(19, 36, 27, 0.85);
+  border-color: rgba(226, 168, 75, 0.28);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 25px -8px rgba(197, 241, 59, 0.12);
+}
+
+/* Luxury Glow accents */
+.glow-amber {
+  box-shadow: 0 0 40px -10px rgba(226, 168, 75, 0.25);
+}
+
+.glow-lime {
+  box-shadow: 0 0 35px -8px rgba(197, 241, 59, 0.3);
+}
+
+/* Subtle grid texture overlay */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
