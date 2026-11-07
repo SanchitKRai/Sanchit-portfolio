@@ -69,12 +69,12 @@ export const projects = [
     shortTitle: 'REKH Artisanal',
     category: 'Web UI/UX & Product Design',
     badge: 'Artisanal Luxury / Fashion E-Commerce',
-    tagline: 'A meeting of sensibilities. Not one world or the other. A language of our own.',
+    tagline: 'Indian textiles. European lines. A meeting of sensibilities.',
     overview: 'Minimalist high-fashion editorial digital flagship celebrating Indian textile heritage, architectural silhouettes, and organic tactile storytelling.',
     metrics: [
-      { label: 'Aesthetic', value: 'Architectural Heritage' },
-      { label: 'Lookbook Structure', value: 'Curated Drops' },
-      { label: 'Brand Depth', value: 'Artisanal Journal' }
+      { label: 'Collection Drop', value: 'Edition 01 / AW 2026' },
+      { label: 'Editorial Motif', value: 'The Quiet Confluence' },
+      { label: 'Design System', value: 'Indian Weave x Euro Cut' }
     ],
     tech: ['Figma UI/UX', 'Editorial Architecture', 'Luxury E-Commerce', 'Brand Storytelling'],
     image: './images/project-rekh.jpg',
