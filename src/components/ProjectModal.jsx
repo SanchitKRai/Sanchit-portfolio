@@ -119,7 +119,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Bottom Actions */}
         <div className="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
@@ -128,6 +128,17 @@ export default function ProjectModal({ project, onClose }) {
                 className="px-5 py-2.5 rounded-xl bg-[#e2a84b] hover:bg-[#f5c879] text-[#0b140f] font-semibold text-xs flex items-center gap-2 shadow-lg"
               >
                 <span>Launch Live App</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
+            {project.fiverrUrl && (
+              <a
+                href={project.fiverrUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2.5 rounded-xl bg-[#1dbf73]/15 text-[#1dbf73] hover:bg-[#1dbf73]/25 font-semibold text-xs flex items-center gap-2 border border-[#1dbf73]/30"
+              >
+                <span>Order on Fiverr</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             )}

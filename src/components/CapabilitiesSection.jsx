@@ -65,14 +65,26 @@ export default function CapabilitiesSection() {
               </div>
 
               {/* Bottom CTA Link */}
-              <div className="pt-6 border-t border-white/[0.06]">
+              <div className="pt-6 border-t border-white/[0.06] flex flex-wrap items-center justify-between gap-3">
                 <a
                   href="#contact"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-[#e2a84b] hover:text-[#f5c879] transition-colors"
                 >
-                  <span>Inquire for {idx === 0 ? 'ML / Bio' : 'Design / Web'} Collaboration</span>
+                  <span>Direct Inquiry</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
+
+                {srv.fiverrUrl && (
+                  <a
+                    href={srv.fiverrUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#1dbf73]/15 text-[#1dbf73] border border-[#1dbf73]/30 hover:bg-[#1dbf73]/25 text-xs font-mono font-medium transition-all"
+                  >
+                    <span>{srv.fiverrLabel}</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </a>
+                )}
               </div>
 
             </div>

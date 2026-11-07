@@ -63,8 +63,18 @@ export default function Hero({ onOpenModal }) {
                 href="#contact"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/[0.05] border border-white/10 text-sm font-medium text-[#eae4d7] hover:bg-white/[0.09] hover:border-[#c5f13b]/40 transition-all hover:-translate-y-0.5"
               >
-                <span>Schedule Discovery Call</span>
+                <span>Schedule Discovery</span>
                 <ArrowUpRight className="w-4 h-4 text-[#c5f13b]" />
+              </a>
+
+              <a
+                href="https://www.fiverr.com/s/DmQK7qX"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#1dbf73]/15 border border-[#1dbf73]/30 text-sm font-medium text-[#1dbf73] hover:bg-[#1dbf73]/25 transition-all hover:-translate-y-0.5"
+              >
+                <span>Hire on Fiverr</span>
+                <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
 

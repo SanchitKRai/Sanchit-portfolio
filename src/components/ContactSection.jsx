@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Mail, Check, Copy, Send, Sparkles, MapPin, Clock } from 'lucide-react'
-import { GithubIcon, LinkedinIcon, TwitterIcon } from './Icons'
+import { Mail, Check, Copy, Send, Sparkles, MapPin, Clock, ArrowUpRight } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, TwitterIcon, FiverrIcon } from './Icons'
+import { SOCIAL_LINKS } from '../data/projects'
 
 export default function ContactSection() {
   const [copied, setCopied] = useState(false)
@@ -12,7 +13,7 @@ export default function ContactSection() {
     message: ''
   })
 
-  const email = 'sanchitkrai.work@gmail.com'
+  const email = SOCIAL_LINKS.email
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email)
@@ -104,32 +105,71 @@ export default function ContactSection() {
               </div>
             </div>
 
+            {/* Fiverr Verified Gigs Banner */}
+            <div className="p-5 rounded-2xl bg-[#1dbf73]/10 border border-[#1dbf73]/30 space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs font-mono font-bold text-[#1dbf73]">
+                  <FiverrIcon className="w-4 h-4 text-[#1dbf73]" />
+                  <span>Hire Me on Fiverr</span>
+                </div>
+                <span className="text-[10px] font-mono text-[#a3bdae] bg-black/40 px-2 py-0.5 rounded">
+                  Escrow Protected
+                </span>
+              </div>
+              <p className="text-xs text-[#c6d7cc] leading-relaxed">
+                Prefer fixed-scope orders with milestone escrow? Check out my verified Fiverr gigs:
+              </p>
+              <div className="flex flex-col gap-2 pt-1">
+                <a
+                  href={SOCIAL_LINKS.fiverrData}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-2.5 rounded-xl bg-black/40 hover:bg-black/60 border border-white/[0.06] text-xs font-mono text-[#faf8f5] hover:text-[#1dbf73] transition-colors"
+                >
+                  <span className="truncate">📊 Business Data Analytics & Dashboards</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 shrink-0 text-[#1dbf73]" />
+                </a>
+                <a
+                  href={SOCIAL_LINKS.fiverrDesign}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-2.5 rounded-xl bg-black/40 hover:bg-black/60 border border-white/[0.06] text-xs font-mono text-[#faf8f5] hover:text-[#1dbf73] transition-colors"
+                >
+                  <span className="truncate">✨ Modern Luxury Landing Pages & UI/UX</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 shrink-0 text-[#1dbf73]" />
+                </a>
+              </div>
+            </div>
+
             {/* Social Links */}
             <div className="space-y-2">
-              <div className="text-xs font-mono text-[#82a08f]">Connect on Social Channels:</div>
+              <div className="text-xs font-mono text-[#82a08f]">Direct Profiles:</div>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://github.com/SanchitKRai"
+                  href={SOCIAL_LINKS.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-xl bg-[#0e1a14] border border-white/10 hover:border-[#c5f13b] hover:text-[#c5f13b] text-[#faf8f5] transition-colors"
                   aria-label="GitHub Profile"
+                  title="GitHub: SanchitKRai"
                 >
                   <GithubIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/sanchitkrai"
+                  href={SOCIAL_LINKS.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-xl bg-[#0e1a14] border border-white/10 hover:border-[#e2a84b] hover:text-[#e2a84b] text-[#faf8f5] transition-colors"
                   aria-label="LinkedIn Profile"
+                  title="LinkedIn: Sanchit Kumar Rai"
                 >
                   <LinkedinIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:sanchitkrai.work@gmail.com"
+                  href={`mailto:${SOCIAL_LINKS.email}`}
                   className="p-3 rounded-xl bg-[#0e1a14] border border-white/10 hover:border-[#c5f13b] hover:text-[#c5f13b] text-[#faf8f5] transition-colors"
                   aria-label="Email Directly"
+                  title={`Email: ${SOCIAL_LINKS.email}`}
                 >
                   <Mail className="w-5 h-5" />
                 </a>

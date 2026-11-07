@@ -82,8 +82,10 @@ The compiled static assets will be generated in `dist/`.
 ## 📬 Contact & Links
 
 - **GitHub**: [@SanchitKRai](https://github.com/SanchitKRai)
-- **LinkedIn**: [linkedin.com/in/sanchitkrai](https://linkedin.com/in/sanchitkrai)
-- **Email**: `sanchitkrai.work@gmail.com`
+- **LinkedIn**: [linkedin.com/in/sanchit-kumar-rai](https://www.linkedin.com/in/sanchit-kumar-rai/)
+- **Email**: `sanchit.kumar.rai.skr@gmail.com`
+- **Fiverr (Data & Analytics)**: [Analyze Business Data & Build Dashboards](https://www.fiverr.com/s/qb5e94d)
+- **Fiverr (Product UI/UX)**: [Modern Luxury Product Landing Pages](https://www.fiverr.com/s/DmQK7qX)
 - **Location**: New Delhi, India
 
 ---

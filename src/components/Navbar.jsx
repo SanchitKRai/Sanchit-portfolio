@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Volume2, VolumeX, Menu, X, ArrowUpRight, Sparkles } from 'lucide-react'
+import { FiverrIcon } from './Icons'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -16,12 +17,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Ambient sound generator via Web Audio API (satisfies ambient audio feature)
+  // Ambient sound generator via Web Audio API
   const toggleAmbientSound = () => {
     if (!soundActive) {
       try {
         const ctx = new (window.AudioContext || window.webkitAudioContext)()
-        // Ambient soft harmonic chord (F# minor / D maj7 peaceful drone)
         const freqs = [185.0, 220.0, 277.18, 329.63]
         const masterGain = ctx.createGain()
         masterGain.gain.setValueAtTime(0.04, ctx.currentTime)
@@ -104,12 +104,12 @@ export default function Navbar() {
         </nav>
 
         {/* Right Actions */}
-        <div className="hidden sm:flex items-center gap-4">
+        <div className="hidden sm:flex items-center gap-3">
           {/* Ambient Audio Pill */}
           <button
             onClick={toggleAmbientSound}
             title={soundActive ? 'Mute ambient sound' : 'Turn on ambient soundscape'}
-            className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono border transition-all ${
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-mono border transition-all ${
               soundActive 
                 ? 'bg-[#c5f13b]/15 text-[#c5f13b] border-[#c5f13b]/40 shadow-[0_0_15px_rgba(197,241,59,0.2)]' 
                 : 'bg-white/[0.03] text-[#a3bdae] border-white/[0.08] hover:border-white/20'
@@ -128,10 +128,22 @@ export default function Navbar() {
             )}
           </button>
 
+          {/* Fiverr Direct Gigs */}
+          <a
+            href="https://www.fiverr.com/s/DmQK7qX"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Verified Gigs on Fiverr"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1dbf73]/15 text-[#1dbf73] border border-[#1dbf73]/30 hover:bg-[#1dbf73]/25 text-xs font-mono transition-all"
+          >
+            <FiverrIcon className="w-3.5 h-3.5 text-[#1dbf73]" />
+            <span className="font-semibold">Fiverr</span>
+          </a>
+
           {/* Status Badge */}
-          <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/25 text-xs text-[#a3bdae]">
+          <div className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/25 text-xs text-[#a3bdae]">
             <span className="w-2 h-2 rounded-full bg-[#c5f13b] animate-ping" />
-            <span className="text-emerald-300 font-medium">Available for Projects</span>
+            <span className="text-emerald-300 font-medium">Available</span>
           </div>
 
           {/* CTA */}
@@ -171,6 +183,15 @@ export default function Navbar() {
               </a>
             ))}
             <div className="pt-2 flex flex-col gap-3">
+              <a
+                href="https://www.fiverr.com/s/DmQK7qX"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono border border-[#1dbf73]/40 bg-[#1dbf73]/15 text-[#1dbf73]"
+              >
+                <FiverrIcon className="w-4 h-4 text-[#1dbf73]" />
+                <span>Hire on Fiverr</span>
+              </a>
               <button
                 onClick={toggleAmbientSound}
                 className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono border border-white/10 bg-white/[0.04] text-[#a3bdae]"

@@ -1,3 +1,16 @@
+export const FIVERR_LINKS = {
+  dataAnalytics: 'https://www.fiverr.com/s/qb5e94d',
+  luxuryDesign: 'https://www.fiverr.com/s/DmQK7qX'
+}
+
+export const SOCIAL_LINKS = {
+  github: 'https://github.com/SanchitKRai',
+  linkedin: 'https://www.linkedin.com/in/sanchit-kumar-rai/',
+  email: 'sanchit.kumar.rai.skr@gmail.com',
+  fiverrData: 'https://www.fiverr.com/s/qb5e94d',
+  fiverrDesign: 'https://www.fiverr.com/s/DmQK7qX'
+}
+
 export const projects = [
   {
     id: 'docklens',
@@ -22,7 +35,8 @@ export const projects = [
       'Published live interactive Streamlit application deployed on BioEdge cloud.'
     ],
     liveUrl: 'https://docklens-bioedge.streamlit.app',
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d'
   },
   {
     id: 'type2-diabetes-twin',
@@ -43,10 +57,62 @@ export const projects = [
     highlights: [
       'Simulated continuous glucose telemetry (CGM) fused with biometric wearable activity streams.',
       'Constructed XGBoost multi-step time series regression predicting hypoglycemic/hyperglycemic excursions 120 minutes ahead.',
-      'Implemented SHAP (SHapley Additive exPlanations) water-fall plots explaining individual patient risk contributors.',
+      'Implemented SHAP (SHapley Additive exPlanations) waterfall plots explaining individual patient risk contributors.',
       'Designed responsive clinical dashboard for synthetic patient profiles with real-time risk gauges.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d'
+  },
+  {
+    id: 'rekh-fashion',
+    title: 'REKH — Luxury Artisanal Fashion & Brand Experience',
+    shortTitle: 'REKH Artisanal',
+    category: 'Web UI/UX & Product Design',
+    badge: 'Artisanal Luxury / Fashion E-Commerce',
+    tagline: 'A meeting of sensibilities. Not one world or the other. A language of our own.',
+    overview: 'Minimalist high-fashion editorial digital flagship celebrating Indian textile heritage, architectural silhouettes, and organic tactile storytelling.',
+    metrics: [
+      { label: 'Aesthetic', value: 'Architectural Heritage' },
+      { label: 'Lookbook Structure', value: 'Curated Drops' },
+      { label: 'Brand Depth', value: 'Artisanal Journal' }
+    ],
+    tech: ['Figma UI/UX', 'Editorial Architecture', 'Luxury E-Commerce', 'Brand Storytelling'],
+    image: './images/project-rekh.jpg',
+    featured: true,
+    highlights: [
+      'Engineered serene, museum-grade editorial storefront layout with high-key architectural photography and warm linen textures.',
+      'Designed "The quiet confluence" and "New signatures" product grids with seamless responsive auto-layout.',
+      'Structured "Notes from the house: The beauty of an uneven thread", harmonizing heritage artisanal craft with digital commerce.',
+      'Optimized conversion paths for bespoke luxury fashion connoisseurs.'
+    ],
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/DmQK7qX'
+  },
+  {
+    id: 'voidcult',
+    title: 'VØIDCULT® — The Origin Archive 001 Streetwear UI',
+    shortTitle: 'VØIDCULT Origin',
+    category: 'Web UI/UX & Product Design',
+    badge: 'Fashion / Modern Streetwear',
+    tagline: 'Inspired by Indian architecture. Built for modern streetwear.',
+    overview: 'High-contrast cyber-brutalist e-commerce showcase featuring "The Origin Archive 001" Oversized Classic Tee with Obsidian Black & Oxblood Burgundy colorways.',
+    metrics: [
+      { label: 'Product Tier', value: 'The Origin ₹1,199' },
+      { label: 'Spec Badges', value: '100% Breathable Cotton' },
+      { label: 'Design Motif', value: 'Ancient Indian Arch' }
+    ],
+    tech: ['Brutalist Typography', 'Product Card UI', 'Lookbook Architecture', 'Figma Auto-Layout'],
+    image: './images/project-voidcult-origin.jpg',
+    secondaryImage: './images/project-voidcult.png',
+    featured: true,
+    highlights: [
+      'Crafted high-impact e-commerce product card featuring Obsidian Black and Oxblood Burgundy colorway selectors.',
+      'Showcases architectural back-print detail inspired by Indian heritage monuments adapted for oversized streetwear.',
+      'Engineered "The Essentials" trust matrix (100% Cotton, Oversized Fit, Breathable, Durable Print).',
+      'Integrated brutalist typography layout and direct conversion CTA flow.'
+    ],
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/DmQK7qX'
   },
   {
     id: 'nyc-airbnb',
@@ -70,7 +136,8 @@ export const projects = [
       'Served production predictions through high-concurrency FastAPI microservice.',
       'Engineered gradient dusk hero backdrop, interactive listing feature card input form, and instant prediction outcome cards.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d'
   },
   {
     id: 'bioedge',
@@ -93,7 +160,8 @@ export const projects = [
       'Curated Bio-Radar career pathways, curated internships, and computational biology learning tracks.',
       'Built dark cyber-green theme with modular prompt chips and student-friendly workflow templates.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d'
   },
   {
     id: 'datalens',
@@ -116,7 +184,8 @@ export const projects = [
       'Instant calculation of dataset quality score, missing value distributions, and column types.',
       'Interactive Pearson correlation matrix and distribution histograms generated on the fly.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d'
   },
   {
     id: 'nextup',
@@ -139,7 +208,8 @@ export const projects = [
       'Dynamic interactive roadmap visualization breaking complex tech stacks into digestible phases.',
       'Integrated honest compensation statistics and AI disruption impact metrics per career trajectory.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d'
   },
   {
     id: 'gali-labs',
@@ -162,7 +232,8 @@ export const projects = [
       'Created interactive 3D exploded view breakdown showcasing insole, midsole, and upper textile layers.',
       'Structured conversion-first visual hierarchy with high-contrast call-to-actions and trust signals.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/DmQK7qX'
   },
   {
     id: 'defender-v8',
@@ -186,7 +257,8 @@ export const projects = [
       'Designed technical chassis sub-assembly breakdown view highlighting powertrain, suspension, and AWD transmission.',
       'Streamlined spec comparisons and bespoke configuration flows for premium buyer persona.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/DmQK7qX'
   },
   {
     id: 'vedica',
@@ -209,30 +281,8 @@ export const projects = [
       'Designed frictionless 1-click ordering flow with clear nutritional and mineral composition indicators.',
       'Harmonized typography with tranquil natural color palette reflecting Himalayan authenticity.'
     ],
-    githubUrl: 'https://github.com/SanchitKRai'
-  },
-  {
-    id: 'voidcult',
-    title: 'VØIDCULT — Futuristic Streetwear E-Commerce UI',
-    shortTitle: 'VØIDCULT',
-    category: 'Web UI/UX & Product Design',
-    badge: 'Fashion / E-Commerce',
-    tagline: 'Code, Honor, Repeat. Brutalist techwear digital experience.',
-    overview: 'Brutalist typography, high-contrast dark aesthetic, scrolling ticker headers, manifesto & lookbook storytelling structure.',
-    metrics: [
-      { label: 'Style', value: 'Cyber-Brutalist' },
-      { label: 'Navigation', value: 'Manifesto + Lookbook' },
-      { label: 'Palette', value: 'Monochrome High-Contrast' }
-    ],
-    tech: ['Brutalist Typography', 'E-Commerce UI', 'Lookbook Systems', 'Figma Auto-Layout'],
-    image: './images/project-voidcult.png',
-    featured: false,
-    highlights: [
-      'Crafted unapologetic cyber-brutalist digital storefront tailored for oversized streetwear enthusiasts.',
-      'Integrated dynamic ticker headers, vertical rule markers, and immersive lookbook photography grids.',
-      'Structured brand manifesto to bridge fashion identity with technical discipline.'
-    ],
-    githubUrl: 'https://github.com/SanchitKRai'
+    githubUrl: 'https://github.com/SanchitKRai',
+    fiverrUrl: 'https://www.fiverr.com/s/DmQK7qX'
   }
 ];
 
@@ -241,19 +291,23 @@ export const services = [
     category: 'Data Science & Machine Learning',
     title: 'For Founders, Biotech & Data Teams',
     description: 'Transforming biological and enterprise data into high-accuracy predictive engines, automated ML pipelines, and production-grade tools.',
+    fiverrUrl: 'https://www.fiverr.com/s/qb5e94d',
+    fiverrLabel: 'Order Data Analytics Gig on Fiverr',
     offerings: [
+      { title: 'Interactive Sales & Data Dashboards', desc: 'Custom business intelligence dashboards, KPI trackers, and automated data profiling engines.' },
       { title: 'End-to-End ML Pipelines', desc: 'From data cleansing and feature engineering to model training, cross-validation, and deployment with FastAPI or Streamlit.' },
       { title: 'Computational Biology & Chemoinformatics', desc: 'Molecular docking surrogates, RDKit chemical fingerprints, protein-ligand screening, and bioinformatics sequence analysis.' },
-      { title: 'Health Signal & Time-Series Modeling', desc: 'Continuous sensor telemetry, digital twin forecasting, and physiological spike risk prediction (XGBoost, ARIMA, Prophet).' },
-      { title: 'Explainable AI (XAI) & Interpretability', desc: 'SHAP waterfall attribution and feature importance analyses that make complex model predictions defensible and auditable.' }
+      { title: 'Health Signal & Time-Series Modeling', desc: 'Continuous sensor telemetry, digital twin forecasting, and physiological spike risk prediction (XGBoost, SHAP).' }
     ]
   },
   {
     category: 'Product Design & Frontend Engineering',
     title: 'For Brands, SaaS & Modern Products',
     description: 'Designing high-converting digital products, luxury dark-mode landing pages, and interactive UI systems engineered to sell and inspire.',
+    fiverrUrl: 'https://www.fiverr.com/s/DmQK7qX',
+    fiverrLabel: 'Order Luxury Landing Page Gig on Fiverr',
     offerings: [
-      { title: 'High-Impact Landing Pages', desc: 'Conversion-engineered web architectures with editorial typography, smooth motion, and 3D visual showcases.' },
+      { title: 'Modern Luxury Product Landing Pages', desc: 'Conversion-engineered web architectures with editorial typography, smooth motion, and 3D visual showcases.' },
       { title: 'Interactive Web Applications', desc: 'Modern responsive web applications built with React, Tailwind CSS, Vite, and client-side statistical engines.' },
       { title: 'Design Systems & Figma-to-Code', desc: 'Structured component libraries, token systems, and pixel-perfect implementation with organized layer hierarchies.' },
       { title: 'Conversational AI & Dashboard Interfaces', desc: 'Engaging chatbot frontends, prompt chip ecosystems, and dense telemetry dashboards built for clarity.' }
@@ -323,6 +377,10 @@ export const personalityCards = [
 
 export const faqs = [
   {
+    q: 'Can I hire you through Fiverr directly with escrow security?',
+    a: 'Yes! You can hire me directly through my verified Fiverr gigs: (1) Business Data Analytics & Interactive Sales Dashboards (https://www.fiverr.com/s/qb5e94d) and (2) Modern Luxury Product Landing Pages & Website UI/UX (https://www.fiverr.com/s/DmQK7qX). Both include Fiverr buyer protection, milestone delivery, and direct messaging.'
+  },
+  {
     q: 'What types of projects do you take on?',
     a: 'I specialize in two complementary areas: (1) Data Science, Machine Learning, and Computational Biology (predictive models, bioinformatics tooling, time-series forecasting, interactive Streamlit/FastAPI apps) and (2) High-impact Product Design & Web Engineering (custom React/Tailwind websites, luxury brand landing pages, and interactive dashboards).'
   },
@@ -339,7 +397,7 @@ export const faqs = [
     a: 'Timelines vary from 1–2 weeks for focused landing pages or ML proof-of-concepts, to 4–8 weeks for comprehensive end-to-end data products. I work with clear milestone deliverables, weekly syncs, and transparent progress updates.'
   },
   {
-    q: 'Are you available for freelance projects or full-time opportunities?',
-    a: 'Yes, I am currently available for select freelance contracts, research collaborations, and full-time engineering/data science roles.'
+    q: 'How do I get in touch for custom collaborations?',
+    a: 'You can email me directly at sanchit.kumar.rai.skr@gmail.com, message me on LinkedIn (linkedin.com/in/sanchit-kumar-rai/), or book a package directly on Fiverr.'
   }
 ];

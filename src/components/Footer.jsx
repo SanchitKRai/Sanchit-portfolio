@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ArrowUp, Mail, Heart } from 'lucide-react'
-import { GithubIcon, LinkedinIcon } from './Icons'
+import { GithubIcon, LinkedinIcon, FiverrIcon } from './Icons'
+import { SOCIAL_LINKS } from '../data/projects'
 
 export default function Footer() {
   const [currentTime, setCurrentTime] = useState('')
@@ -65,15 +66,18 @@ export default function Footer() {
           <div>
             © {new Date().getFullYear()} Sanchit Kumar Rai. Built with React & Tailwind CSS.
           </div>
-          <div className="flex items-center gap-6">
-            <a href="https://github.com/SanchitKRai" target="_blank" rel="noopener noreferrer" className="hover:text-[#c5f13b] transition-colors">
+          <div className="flex flex-wrap items-center gap-6">
+            <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="hover:text-[#c5f13b] transition-colors">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/sanchitkrai" target="_blank" rel="noopener noreferrer" className="hover:text-[#e2a84b] transition-colors">
+            <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-[#e2a84b] transition-colors">
               LinkedIn
             </a>
-            <a href="mailto:sanchitkrai.work@gmail.com" className="hover:text-[#faf8f5] transition-colors">
-              Email
+            <a href={SOCIAL_LINKS.fiverrDesign} target="_blank" rel="noopener noreferrer" className="hover:text-[#1dbf73] transition-colors">
+              Fiverr
+            </a>
+            <a href={`mailto:${SOCIAL_LINKS.email}`} className="hover:text-[#faf8f5] transition-colors">
+              {SOCIAL_LINKS.email}
             </a>
           </div>
         </div>
