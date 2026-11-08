@@ -50,34 +50,6 @@ A modern, high-performance portfolio website engineered for **Sanchit Kumar Rai*
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/SanchitKRai/Sanchit-portfolio.git
-cd Sanchit-portfolio
-```
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Run development server
-```bash
-npm run dev
-```
-
-Visit `http://localhost:5173` to explore the site locally.
-
-### 4. Build for production
-```bash
-npm run build
-```
-
-The compiled static assets will be generated in `dist/`.
-
----
 
 ## 📬 Contact & Links
 
