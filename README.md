@@ -2,7 +2,7 @@
 
 > **"Turning biology into evidence. Complex ideas, compelling digital experiences."**
 
-A modern, high-performance portfolio website engineered for **Sanchit Kumar Rai**—computational biology researcher, machine learning engineer, and product designer from the University of Delhi.
+**Sanchit Kumar Rai**—computational biology researcher, machine learning engineer, and product designer from the University of Delhi.
 
 ![Sanchit Portfolio Hero](./public/images/sanchit-hero.jpg)
 
